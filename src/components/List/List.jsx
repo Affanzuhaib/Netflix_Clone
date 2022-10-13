@@ -8,10 +8,14 @@ export default function List() {
     const listRef = useRef()
 
     const handleClick = (direction) => {
-        if(direction === "left"){
-            listRef.current.style.transform = `translateX(230px)`
+      //  let distance = listRef.current.getBoundingClientRect().x -50
+      if(direction === "left"){
+       //     listRef.current.style.transform = `translateX(230px)`
+            //listRef.current.style.transform =`translateX(${230 + distance}px)`
         }
+
     }
+    //
   return (
     <div className='list'>
         <span className="listTitle">continue of watch</span>
@@ -36,3 +40,5 @@ export default function List() {
     </div>
   )
 }
+
+//
